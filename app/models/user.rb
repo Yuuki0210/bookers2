@@ -28,6 +28,8 @@ class User < ApplicationRecord
   end
 
 
+
+
   attachment :profile_image, destroy: false
 
   validates :name, length: {maximum: 20, minimum: 2}, uniqueness: true

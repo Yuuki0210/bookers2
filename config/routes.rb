@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'homes#top'
+  get '/search' => 'searches#search'
   get 'homes/about' => 'homes#about'
   resources :books do
   resources :post_comments, only: [:create, :destroy]
